@@ -28,7 +28,6 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* For dropdown positioning */
 }
 
 .header .logo {
@@ -41,55 +40,15 @@ h1, h2, h3 {
     gap: 20px;
 }
 
-/* Links Styling */
 .header nav a {
     color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 .header nav a:hover {
     text-decoration: underline;
     color: rgb(235, 252, 9);
 }
-
-/* Hide menu toggle by default */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* Mobile and Tablet Styles */
-@media (max-width: 768px) {
-    /* Display menu toggle */
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Hide navigation links by default */
-    .header nav {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: black;
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 1000;
-    }
-
-    /* Show nav menu when active */
-    .header nav.active {
-        display: flex;
-    }
-}
-
 
 /* Footer Style */
 footer {
