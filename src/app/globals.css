@@ -1,0 +1,269 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Header Style */
+.header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 20px;
+    color: white;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+    color: rgb(235, 252, 9);
+}
+
+/* Footer Style */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 81vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-right: 150px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3f3e3e;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: rgb(235, 252, 9);
+    color: black;
+}
+
+/* Content Sections */
+.about, .services, .latest {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+}
+
+.about-content, .services-content, .latest-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-content p, .services-content p, .latest-content p {
+    padding-top: 20px;
+}
+
+/* Contact Form */
+.contact-bg {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgba(201, 198, 198, 0.9);
+    color: #000;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #3f3e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 10px auto;
+}
+
+.contact-form button:hover {
+    background-color: rgb(235, 252, 9);
+    color: black;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+
+/* Tablets and Medium Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+
+    .header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 20px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .about, .services, .latest, .contact-bg {
+        padding: 40px 10px;
+        height: auto;
+    }
+
+    .about-content, .services-content, .latest-content {
+        padding: 15px;
+        margin: 10px auto;
+    }
+}
+
+/* Mobile and Small Screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .hero button {
+        font-size: 14px;
+    }
+
+    .about-content, .services-content, .latest-content {
+        padding: 10px;
+    }
+
+    .contact-form {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
