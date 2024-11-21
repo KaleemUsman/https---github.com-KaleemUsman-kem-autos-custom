@@ -8,7 +8,7 @@ const Contact = () => {
         
         <form className="contact-form">
         <h2 className="fade-in">Get in Touch with KeM Autos</h2><br />
-    <fieldset>
+    <fieldset className='fade-in'>
       <input type="text" placeholder="Full Name" required />
    <input type="email" placeholder="Email Address" required />
    <input type="text" placeholder="Contact Number" required />
