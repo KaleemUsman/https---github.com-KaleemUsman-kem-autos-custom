@@ -6,7 +6,7 @@ const HomeContent = () => {
       <section className='hero' style={{backgroundImage: "url(main.jpg)"}}>
     <div>
         <h1 className='fade-in'>Welcome To Our Autos</h1>
-        <p>Explore a curated selection of premium vehicles.</p>
+        <p className='fade-in'>Explore a curated selection of premium vehicles.</p>
         <button>Visit Now</button>
     </div>
 
