@@ -274,7 +274,7 @@ footer p {
 .hero {
     background-size: cover; /* Ensures the image covers the section */
     background-position: center; /* Centers the image */
-    height: 81vh; /* Adjust height based on viewport */
+    height: auto; /* Adjust height based on viewport */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -286,7 +286,7 @@ footer p {
 /* Media Query for Tablets */
 @media (max-width: 768px) {
     .hero {
-        height: 70vh; /* Reduce height for smaller screens */
+        height: auto; /* Reduce height for smaller screens */
         padding: 15px;
     }
 }
@@ -294,7 +294,7 @@ footer p {
 /* Media Query for Mobile */
 @media (max-width: 480px) {
     .hero {
-        height: 60vh; /* Further reduce height for mobile */
+        height: auto; /* Further reduce height for mobile */
         padding: 10px;
         background-size: contain; /* Ensures the whole image fits within the screen */
     }
