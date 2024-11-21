@@ -66,21 +66,18 @@ footer p {
 .hero {
     background-size: cover;
     background-position: center;
-    height: 81vh; /* Default height */
+    height: 81vh;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
     color: white;
-    padding: 20px; /* Ensure consistent padding */
-    box-sizing: border-box; /* Include padding in width/height */
+    padding-right: 150px;
 }
 
 .hero h1 {
     font-size: 30px;
     text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
-    margin: 10px 0; /* Add space around text */
 }
 
 .hero p {
@@ -98,15 +95,12 @@ footer p {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block; /* Ensures proper centering */
-    text-align: center;
 }
 
 .hero button:hover {
     background-color: rgb(235, 252, 9);
     color: black;
 }
-
 
 /* Content Sections */
 .about, .services, .latest {
