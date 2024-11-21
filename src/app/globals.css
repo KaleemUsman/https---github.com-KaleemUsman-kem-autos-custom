@@ -66,18 +66,21 @@ footer p {
 .hero {
     background-size: cover;
     background-position: center;
-    height: 81vh;
+    height: 81vh; /* Default height */
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     text-align: center;
     color: white;
-    padding-right: 150px;
+    padding: 20px; /* Ensure consistent padding */
+    box-sizing: border-box; /* Include padding in width/height */
 }
 
 .hero h1 {
     font-size: 30px;
     text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+    margin: 10px 0; /* Add space around text */
 }
 
 .hero p {
@@ -95,12 +98,15 @@ footer p {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: block; /* Ensures proper centering */
+    text-align: center;
 }
 
 .hero button:hover {
     background-color: rgb(235, 252, 9);
     color: black;
 }
+
 
 /* Content Sections */
 .about, .services, .latest {
@@ -191,27 +197,10 @@ footer p {
 
 /* Responsive Design */
 
-/* Tablets and Medium Screens */
+/* Adjustments for Tablets */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header .logo {
-        margin-bottom: 10px;
-    }
-
-    .header nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .hero {
-        height: 70vh;
-        padding: 20px;
-        text-align: center;
-        padding-right: 0;
+        height: 70vh; /* Adjusted height for smaller screens */
     }
 
     .hero h1 {
@@ -223,24 +212,17 @@ footer p {
     }
 
     .hero button {
-        width: 100%;
-        padding: 12px;
+        padding: 12px 20px;
         font-size: 16px;
-    }
-
-    .about, .services, .latest, .contact-bg {
-        padding: 40px 10px;
-        height: auto;
-    }
-
-    .about-content, .services-content, .latest-content {
-        padding: 15px;
-        margin: 10px auto;
     }
 }
 
 /* Mobile and Small Screens */
 @media (max-width: 480px) {
+    .hero {
+        height: 60vh; /* Adjusted height for mobile */
+    }
+
     .hero h1 {
         font-size: 20px;
     }
@@ -250,20 +232,8 @@ footer p {
     }
 
     .hero button {
+        width: auto; /* Button adjusts to content */
+        padding: 12px;
         font-size: 14px;
-    }
-
-    .about-content, .services-content, .latest-content {
-        padding: 10px;
-    }
-
-    .contact-form {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    .contact-form button {
-        font-size: 14px;
-        padding: 10px;
     }
 }
