@@ -191,10 +191,27 @@ footer p {
 
 /* Responsive Design */
 
-/* Adjustments for Tablets */
+/* Tablets and Medium Screens */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+
+    .header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .hero {
-        height: 70vh; /* Adjusted height for smaller screens */
+        height: 70vh;
+        padding: 20px;
+        text-align: center;
+        padding-right: 0;
     }
 
     .hero h1 {
@@ -206,17 +223,24 @@ footer p {
     }
 
     .hero button {
-        padding: 12px 20px;
+        width: 100%;
+        padding: 12px;
         font-size: 16px;
+    }
+
+    .about, .services, .latest, .contact-bg {
+        padding: 40px 10px;
+        height: auto;
+    }
+
+    .about-content, .services-content, .latest-content {
+        padding: 15px;
+        margin: 10px auto;
     }
 }
 
 /* Mobile and Small Screens */
 @media (max-width: 480px) {
-    .hero {
-        height: 60vh; /* Adjusted height for mobile */
-    }
-
     .hero h1 {
         font-size: 20px;
     }
@@ -226,8 +250,20 @@ footer p {
     }
 
     .hero button {
-        width: auto; /* Button adjusts to content */
-        padding: 12px;
         font-size: 14px;
+    }
+
+    .about-content, .services-content, .latest-content {
+        padding: 10px;
+    }
+
+    .contact-form {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px;
     }
 }
